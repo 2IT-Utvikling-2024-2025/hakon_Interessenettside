@@ -1,0 +1,71 @@
+
+/* Global Style*/
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+}
+
+h2 {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    color: rgb(255, 255, 255);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #36393e;
+}
+
+/* Navigation bar*/
+.navbar {
+    overflow: hidden;
+    background-color: #1e2124;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #4f4d4d;
+    color: rgb(50, 50, 50);
+}
+
+/* Frontpage */
+
+.frontpage{
+    text-align: center;
+    margin: 100px;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px;
+    padding: 50px;
+}
+
+.larp-video {
+    padding: 20px;
+}
+
+.larp-info{
+    padding: 20px;
+}
