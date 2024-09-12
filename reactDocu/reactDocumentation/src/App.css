@@ -1,0 +1,38 @@
+html, body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212; 
+}
+
+#root {
+  width: 100%; /* content takes up  full width */
+}
+
+.container {
+  max-width: 800px; /* Limits the width of the  */
+  width: 100%;
+  padding: 2rem;
+  margin: 0 auto; 
+  text-align: center;
+}
+
+h1, h3 {
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+p {
+  color: #ffffff;
+  line-height: 1.8; /*  space between lines */
+  margin-bottom: 2rem; /*  space between paragraphs */
+}
+
+img {
+  display: block;
+  margin: 20px auto; /* Centers image */
+  width: 150px;
+  height: auto;
+}
