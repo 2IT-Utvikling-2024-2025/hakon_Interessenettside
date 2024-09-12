@@ -13,7 +13,7 @@ html, body {
 .container {
   max-width: 800px; /* Limits the width of the  */
   width: 100%;
-  padding: 2rem;
+  padding: 3rem;
   margin: 0 auto; 
   text-align: center;
 }
@@ -22,12 +22,14 @@ h1, h3 {
   color: #ffffff;
   margin-bottom: 1.5rem;
   text-align: center;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 p {
   color: #ffffff;
   line-height: 1.8; /*  space between lines */
   margin-bottom: 2rem; /*  space between paragraphs */
+  font-family: 'Times New Roman', Times, serif;
 }
 
 img {
@@ -35,4 +37,15 @@ img {
   margin: 20px auto; /* Centers image */
   width: 150px;
   height: auto;
+}
+
+.firewall-steps {
+  margin-left: 20px; 
+  padding-left: 20px; 
+  line-height: 1.4; 
+}
+
+.firewall-steps li {
+  margin-bottom: 0.5rem; /* Space between list items */
+  color: #ffffff; /*keeps text color consistent */
 }

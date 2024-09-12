@@ -7,7 +7,8 @@ function App() {
   return (
     <div id="root">
       <div className="container">
-        <h1>TVERFAGLIG PROSJEKT</h1>
+        <h1>KOBLE SAMMEN PC'ER</h1>
+        <h3>Tverrfaglig Prosjekt</h3>
         <img 
           src="https://media.discordapp.net/attachments/1163559115306573996/1283409728713785416/output-onlinegiftools.gif?ex=66e2e3f3&is=66e19273&hm=81b9d6015563c1f1a4128ca6fb4e6e40e8a27676e0069cd6486cb560fe3cf880&=&width=747&height=420" 
           alt="Animated Image" 
@@ -37,6 +38,17 @@ function App() {
         </section>
 
         <section>
+  <h3>BRUKERVEILEDNING BRANNMUR</h3>
+  <ol className="firewall-steps">
+    <li>Gå til forstørrelses glasset og søk «firewall»</li>
+    <li>Trykk inn på firewall & Network protection</li>
+    <li>Finn avanserte innstillinger</li>
+    <li>Etter du er ferdig trykker du på X i høyre hjørnet får å gå ut av brannmuren</li>
+  </ol>
+</section>
+
+
+        <section>
           <h3>REFLEKSJON:</h3>
           <p>Jeg har lært mye gjennom denne oppgaven. Jeg kan nå installere Windows, endre IP adressen til pc-en, 
             gjøre endringer i brannmuren, pinge andre PCer, også har jeg blitt litt flinkere i react. Jeg lærte hvordan man 
@@ -44,10 +56,8 @@ function App() {
             å ta igjen den tapte tiden. Om jeg skulle gjort dette igjen tror jeg ikke at jeg hadde gjort mye annerledes, men jeg 
             hadde gjort alt mye raskere.</p>
 
-            <p>Håkon</p>
-
-
         </section>
+
       </div>
     </div>
   );
