@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './TodoList.css'; // Ensure you import the CSS file
+import './TodoList.css'; 
 
 const TodoList = () => {
   const [todos, setTodos] = useState([]);
@@ -46,7 +46,7 @@ const TodoList = () => {
 
   return (
     <div className="container">
-      <div className="header">Todo List</div>
+      <div className="header">My To-do List</div>
       <div className="input-container">
         <input
           className="input"
@@ -55,7 +55,7 @@ const TodoList = () => {
           value={newTodo}
           onChange={(e) => setNewTodo(e.target.value)}
         />
-        <button className="add-button" onClick={handleAdd}>Add</button>
+        <button className="add-button" onClick={handleAdd}>Add Task</button>
       </div>
       <ul className="todo-list">
         {todos.map(todo => (
