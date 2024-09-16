@@ -1,65 +1,95 @@
+import React, { useState } from 'react';
+import './TodoList.css'; // Ensure you import the CSS file
 
-import { useState } from 'react';
-import './TodoList.css'
+const TodoList = () => {
+  const [todos, setTodos] = useState([]);
+  const [newTodo, setNewTodo] = useState('');
+  const [editingId, setEditingId] = useState(null);
+  const [editText, setEditText] = useState('');
 
-
-function TodoList() {
-  const [todos, setTodos] = useState([
-    { text: "First task", isCompleted: false },
-    { text: "Second task", isCompleted: false },
-    { text: "Third task", isCompleted: false }
-  ]);
-
-  const [newTodo, setNewTodo] = useState("");
-
-  // Add a new todo
-  const addTodo = () => {
-    if (newTodo.trim() !== "") {
-      setTodos([...todos, { text: newTodo, isCompleted: false }]);
-      setNewTodo("");
+  const handleAdd = () => {
+    if (newTodo.trim()) {
+      setTodos([
+        ...todos,
+        {
+          id: Date.now(), // Use timestamp as a unique id
+          text: newTodo,
+          completed: false
+        }
+      ]);
+      setNewTodo(''); // Clear input field after adding
     }
   };
 
-  // Toggle task completion
-  const toggleCompletion = (index) => {
-    const updatedTodos = [...todos];
-    updatedTodos[index].isCompleted = !updatedTodos[index].isCompleted;
-    setTodos(updatedTodos);
+  const handleDelete = (id) => {
+    setTodos(todos.filter(todo => todo.id !== id));
+  };
+
+  const handleEdit = (id, text) => {
+    setEditingId(id);
+    setEditText(text);
+  };
+
+  const handleSaveEdit = () => {
+    setTodos(todos.map(todo =>
+      todo.id === editingId ? { ...todo, text: editText } : todo
+    ));
+    setEditingId(null);
+    setEditText('');
+  };
+
+  const handleToggleComplete = (id) => {
+    setTodos(todos.map(todo =>
+      todo.id === id ? { ...todo, completed: !todo.completed } : todo
+    ));
   };
 
   return (
     <div className="container">
-      <h1 className="header">Todo List</h1>
-
+      <div className="header">Todo List</div>
       <div className="input-container">
         <input
+          className="input"
           type="text"
+          placeholder="Add a new todo"
           value={newTodo}
           onChange={(e) => setNewTodo(e.target.value)}
-          placeholder="Add a new task"
-          className="input"
         />
-        <button onClick={addTodo} className="add-button">Add Todo</button>
+        <button className="add-button" onClick={handleAdd}>Add</button>
       </div>
-
-      {/* This is the section where the bullet points were an issue */}
       <ul className="todo-list">
-        {todos.map((todo, index) => (
-          <li key={index} className="todo-item">
+        {todos.map(todo => (
+          <li key={todo.id} className={`todo-item ${todo.completed ? 'completed' : ''}`}>
             <input
               type="checkbox"
-              checked={todo.isCompleted}
-              onChange={() => toggleCompletion(index)}
               className="checkbox"
+              checked={todo.completed}
+              onChange={() => handleToggleComplete(todo.id)}
             />
-            <span className={`todo-text ${todo.isCompleted ? 'completed' : ''}`}>
-              {todo.text}
-            </span>
+            {editingId === todo.id ? (
+              <div className="edit-container">
+                <input
+                  type="text"
+                  className="input"
+                  value={editText}
+                  onChange={(e) => setEditText(e.target.value)}
+                />
+                <button className="add-button" onClick={handleSaveEdit}>Save</button>
+              </div>
+            ) : (
+              <span className="todo-text">{todo.text}</span>
+            )}
+            <div>
+              <button className="edit-button" onClick={() => handleEdit(todo.id, todo.text)}>Edit</button>
+              <button className="delete-button" onClick={() => handleDelete(todo.id)}>Delete</button>
+            </div>
           </li>
         ))}
       </ul>
     </div>
   );
-}
+};
 
 export default TodoList;
+
+

@@ -1,18 +1,22 @@
-
-
-
-ul.todo-list {
+/* General Styles */
+body {
+    background-color: #f0f0f0; /* Light gray background for the whole page */
+    color: #333; /* Darker text for readability */
+  }
+  
+  /* Todo List Styles */
+  ul.todo-list {
     list-style-type: none;  /* Removes bullet points */
     padding: 0;
     margin: 0;
   }
   
-  /* Style for each todo item */
+  /* Individual Todo Item Styles */
   li.todo-item {
     display: flex;
     align-items: center;  
     justify-content: space-between;
-    background-color: #f4f4f4;
+    background-color: #ffffff; /* Off-white background color */
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
@@ -21,24 +25,56 @@ ul.todo-list {
   
   /* Checkbox styling */
   .checkbox {
-    margin-right: 10px;  /* Space between checkbox and text */
-    transform: scale(1.2);  /* Make the checkbox slightly bigger */
+    margin-right: 10px;  
+    transform: scale(1.2); 
   }
   
   /* Style for the todo text */
   .todo-text {
     font-size: 1rem;
-    color: #333;  /* Dark text color for visibility */
-    flex-grow: 1;  /* Ensure the text takes up the remaining space */
+    color: #333333;  /* Darker text color for readability */
+    flex-grow: 1;  
   }
   
-  /* Strikethrough for completed tasks */
+  /* Completed task styles */
   .completed {
     text-decoration: line-through;
-    color: #777;  /* Lighter color for completed tasks */
+    color: #a0a0a0;  /* Lighter color for completed tasks */
   }
   
-  /* Header and input/button styling */
+  /* Button Styles */
+  .delete-button, .edit-button {
+    background-color: #007bff; /* Blue background for buttons */
+    color: #ffffff; /* White text color */
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-left: 5px;
+  }
+  
+  .delete-button {
+    background-color: #dc3545; /* Red background for delete button */
+  }
+  
+  .edit-button {
+    background-color: #ffc107; /* Yellow background for edit button */
+  }
+  
+  /* Input Box Styles */
+  .input {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    width: 250px;
+    background-color: #f8f9fa; /* Slightly off-white background for input */
+    color: #000; /* Black text color */
+  }
+  
+  /* Header and Input/Button Styling */
   .container {
     display: flex;
     flex-direction: column;
@@ -50,7 +86,6 @@ ul.todo-list {
   .header {
     font-size: 2rem;
     margin-bottom: 20px;
-
   }
   
   .input-container {
@@ -58,23 +93,22 @@ ul.todo-list {
     margin-bottom: 20px;
   }
   
-  .input {
-    padding: 10px;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    margin-right: 10px;
-    width: 250px;
-  }
-  
   .add-button {
     padding: 10px 15px;
     font-size: 1rem;
     border-radius: 5px;
     background-color: #28a745;
-    color: #fff;
+    color: #fff; /* Text color */
     border: none;
     cursor: pointer;
   }
+
+  .edit-container {
+    display: flex;
+    align-items: center;
+  }
   
+  .edit-container .input {
+    margin-right: 10px;
+  }
   
