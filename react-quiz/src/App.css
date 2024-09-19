@@ -1,0 +1,11 @@
+#root {
+  max-width: 1280px;
+  margin: 1 auto;
+  padding: 3rem;
+  text-align: center;
+}
+
+.question1 {
+  padding: 3px;
+  word-spacing: 2px;
+}
