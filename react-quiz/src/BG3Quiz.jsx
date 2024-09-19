@@ -43,46 +43,37 @@ const BG3Quiz = () => {
       {/* Question 1 */}
       <div>
         <p>1. How did your first playthrough end?</p>
+
         <label>
           <input type="radio" name="q1" value="Evil" onChange={handleChange} />
           Evil Ending
-        </label>
-        <label>
           <input type="radio" name="q1" value="Good" onChange={handleChange} />
           Good Ending
-        </label>
-        <label>
           <input type="radio" name="q1" value="Neither" onChange={handleChange} />
           Not evil, but not exactly good
-        </label>
-        <label>
           <input type="radio" name="q1" value="Unfinished" onChange={handleChange} />
           Yet to finish
+
         </label>
       </div>
 
       {/* Question 2 */}
       <div>
         <p>2. Which Companion did you romance?</p>
+
         <label>
+            
           <input type="checkbox" name="q2" value="Karlach" onChange={handleChange} />
           Karlach
-        </label>
-        <label>
           <input type="checkbox" name="q2" value="Shadowheart" onChange={handleChange} />
           Shadowheart
-        </label>
-        <label>
           <input type="checkbox" name="q2" value="Astarion" onChange={handleChange} />
           Astarion
-        </label>
-        <label>
           <input type="checkbox" name="q2" value="Gale" onChange={handleChange} />
           Gale
-        </label>
-        <label>
           <input type="checkbox" name="q2" value="Neither" onChange={handleChange} />
           None of the above
+
         </label>
       </div>
 
@@ -90,12 +81,12 @@ const BG3Quiz = () => {
       <div>
         <p>3. Have you modded your game?</p>
         <label>
+
           <input type="radio" name="q3" value="Yes" onChange={handleChange} />
           Yes
-        </label>
-        <label>
           <input type="radio" name="q3" value="No" onChange={handleChange} />
           No
+
         </label>
       </div>
 
@@ -103,20 +94,16 @@ const BG3Quiz = () => {
       <div>
         <p>4. What did you enjoy most about BG3?</p>
         <label>
+
           <input type="checkbox" name="q4" value="combat" onChange={handleChange} />
           Combat
-        </label>
-        <label>
           <input type="checkbox" name="q4" value="story" onChange={handleChange} />
           Story
-        </label>
-        <label>
           <input type="checkbox" name="q4" value="character creation" onChange={handleChange} />
           Character Creation
-        </label>
-        <label>
           <input type="checkbox" name="q4" value="Neither" onChange={handleChange} />
           None of the above
+
         </label>
       </div>
 
