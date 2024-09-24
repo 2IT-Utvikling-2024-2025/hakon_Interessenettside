@@ -8,11 +8,11 @@ const BG3Quiz = () => {
     q3: '',
     q4: [],
     q5: '',
-    q6: '',
+    q6: '', 
     q7: '',
     q8: '',
     q9: 0,
-    q10: 0, // fixed duplicate q9
+    q10: 0, 
   });
 
   const handleChange = (e) => {
@@ -62,7 +62,7 @@ const BG3Quiz = () => {
         <p>2. Which Companion did you romance?</p>
 
         <label>
-            
+
           <input type="checkbox" name="q2" value="Karlach" onChange={handleChange} />
           Karlach
           <input type="checkbox" name="q2" value="Shadowheart" onChange={handleChange} />

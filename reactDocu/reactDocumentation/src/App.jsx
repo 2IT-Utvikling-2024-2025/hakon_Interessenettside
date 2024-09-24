@@ -15,24 +15,25 @@ function App() {
         />
         <section>
           <h3>PLANLEGGING</h3>
-          <p>Først valgte vi navn standarden til PC-en. Vi bestemte at det skulle være PC og så IP adressen. Vår gruppe benytter IP adressene 192.168.1.60 – 79. 
+          <p> Navn standarden til PC-en er IP adressen. Vår gruppe benytter IP adressene 192.168.1.60 – 79. 
             Svein sin IP er 192.168.60, Odin sin er 192.168.1.61 og min IP er 192.168.1.62. Det er vår IP-plan. Derfor er min navn standard PC-192.168.1.62
           </p>
         </section>
 
         <section>
           <h3>WINDOWS SETUP</h3>
-          <p>Jeg satte inn minnepenn med Windows 10, jeg prøvde først Windows 11 men pc-en kunne ikke støtte den. Etter minnepenn er satt inn trykket jeg på Enter og f12, jeg fikk en liten meny med forskjellige  valg. Jeg valgte USB deretter Norsk språk, så startet Windows 10 installasjonen.
-            Etter Windows 10 var installert valgte jeg custom setup. Jeg slettet alle eksisterende disker og valgte at partisjonen for disken skulle ha 100gb. 
+          <p>
+            Først ble windows 11 testet, dette funket ikke så windows 10 ble installert. Trykk Enter og f12, da får man liten meny med forskjellige  valg. Man velger USB deretter Norsk språk, så er Windows 10 installasjonen ferdig.
+            Etter Windows 10 er installert  velger man custom setup. Slett alle eksisterende disker og velg at partisjonen for disken skal ha 100gb. 
           </p>
         </section>
 
         <section>
           <h3>KOBLE SAMMEN PC</h3>
-          <p>Med Windows setup ferdig kunne jeg starte neste delen av oppgaven. Jeg gikk inn på settings – Network Connection, høyreklikket på Ethernet, og endret IP til min IP som var 192.168.1.62. 
-             Jeg fikk automatisk subnetmasken 255.255.255.0. Etter det gikk jeg inn på brannmuren og trykket på enable, sånn at jeg kan pinge andre PCer. Jeg og Odin koblet oss på Ethernet og åpnet terminalen og brukte kommando ping (IP). Jeg pinget Odin sin IP, 
-             så det ble ping 192.168.1.61. Vi klarte å pinge hverandre.
-             Til slutt koblet vi oss på tråløst nettverk og lastet ned FileZilla. Svein satte opp en server som vi kunne bruke til å sende hverandre filer.
+          <p>Nå som Windows er ferdig installert er det bare å gå inn på settings – Network Connection, høyreklikket på Ethernet, og endret IP ti  192.168.1.62. 
+Man får automatisk subnetmasken 255.255.255.0. Deretter går man inn på brannmuren og trykker på enable, sånn at man kan pinge andre PCer. Vi koblet oss på Ethernet og åpnet terminalen og brukte kommando ping (IP). 
+Til slutt koblet vi oss på tråløst nettverk og lastet ned Filezilla. Det ble satt opp en server sånn at man kunne sende filer med filezilla.
+
           </p>
 
         </section>
