@@ -15,24 +15,24 @@ function App() {
         />
         <section>
           <h3>PLANLEGGING</h3>
-          <p> Navn standarden til PC-en er IP adressen. Vår gruppe benytter IP adressene 192.168.1.60 – 79. 
-            Svein sin IP er 192.168.60, Odin sin er 192.168.1.61 og min IP er 192.168.1.62. Det er vår IP-plan. Derfor er min navn standard PC-192.168.1.62
-          </p>
+          <p> Navn standarden til PC-en er IP adressen.
+             Vår gruppe benytter IP adressene 192.168.1.60 – 79. Svein sin IP er 192.168.60, Odin sin er 192.168.1.61 og min IP er 192.168.1.62. Det er vår IP-plan. Derfor er min navn standard PC-192.168.1.62</p>
         </section>
 
         <section>
           <h3>WINDOWS SETUP</h3>
           <p>
-            Først ble windows 11 testet, dette funket ikke så windows 10 ble installert. Trykk Enter og f12, da får man liten meny med forskjellige  valg. Man velger USB deretter Norsk språk, så er Windows 10 installasjonen ferdig.
-            Etter Windows 10 er installert  velger man custom setup. Slett alle eksisterende disker og velg at partisjonen for disken skal ha 100gb. 
+          Først ble Windows 11 testet, dette funket ikke så Windows 10 ble installert.  Minnepinne ble brukt for installasjon av Windows, når den var satt opp fikk man opp boost menyen I boost menyen velger man USB, og norsk språk.
+          Etter Windows 10 installasjon velger man custom setup. Slett alle eksisterende disker og velg at partisjonen for disken skal ha 100gb. 
+
           </p>
         </section>
 
         <section>
           <h3>KOBLE SAMMEN PC</h3>
-          <p>Nå som Windows er ferdig installert er det bare å gå inn på settings – Network Connection, høyreklikket på Ethernet, og endret IP ti  192.168.1.62. 
-Man får automatisk subnetmasken 255.255.255.0. Deretter går man inn på brannmuren og trykker på enable, sånn at man kan pinge andre PCer. Vi koblet oss på Ethernet og åpnet terminalen og brukte kommando ping (IP). 
-Til slutt koblet vi oss på tråløst nettverk og lastet ned Filezilla. Det ble satt opp en server sånn at man kunne sende filer med filezilla.
+          <p>NDeretter gå inn på settings – Network Connection, høyreklikket på Ethernet, og endre IP ti  192.168.1.62. 
+          automatisk subnetmasken er 255.255.255.0. Deretter åpne brannmur og trykke på enable, sånn at man kan pinge andre PCer. Koblet på Ethernet og åpne terminalen og bruk kommando ping (IP). 
+          Til slutt last ned Filezilla. Sett opp en server for å bruke overføre filer.
 
           </p>
 
