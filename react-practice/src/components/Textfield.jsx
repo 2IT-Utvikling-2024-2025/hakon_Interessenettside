@@ -1,35 +1,36 @@
-import { useState } from 'react'
-import './inputfields.css'
+import React, { useState } from 'react';
+import './inputfields.css';
 
-export default function Textfield () {
+function Converter() {
+  const [inches, setInches] = useState('');
+  const [centimeters, setCentimeters] = useState('');
 
-    const [inputContent, setInputContent] = useState('');
+  const handleInputChange = (e) => {
+    const inchesValue = e.target.value;
+    setInches(inchesValue);
 
-    function handleChange (e) {
-        console.log(e.target.value);
-        setInputContent(e.target.value);
+    // Convert inches to centimeters
+    const cmValue = parseFloat(inchesValue) * 2.54;
+    if (!isNaN(cmValue)) {
+      setCentimeters(cmValue.toFixed(2)); // Round to 2 decimal places
+    } else {
+      setCentimeters('?');
     }
+  };
 
-    return (
-        <>
-
-     <div className="container">
-        <div className="section">
-             <div className="question">
-                 <h1> Hva er adressen til drømtorp VGs?</h1>
-             </div>
-       
-         <div className="answer">
-             <label>
-             <input 
-             onChange={handleChange}
-             className="myInput" />
-             </label>
-            </div>
-           
-         </div>
+  return (
+    <div class="converter">
+      <input
+        type="text"
+        value={inches}
+        onChange={handleInputChange}
+        placeholder="Enter inches"
+      />
+      inches = <span>{centimeters}</span> cm
     </div>
-      
-        </>
-    )
+  );
 }
+
+export default Converter;
+
+

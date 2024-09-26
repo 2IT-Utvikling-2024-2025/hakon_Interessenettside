@@ -1,16 +1,20 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    align-items: center;
-}
 
-.myInput { 
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
+.input-field {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
+    margin-right: 10px;
+  }
+  
+  .result {
+    font-weight: bold;
+    color: #333;
+  }
+
+  body {
+    background-color: whitesmoke;
+    font-size: 125%;
+    text-align: center;
+  }
+  
